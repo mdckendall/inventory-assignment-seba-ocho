@@ -36,12 +36,11 @@ public class Main
         int userListOpt;
         Scanner input = new Scanner(System.in);
 
-        System.out.println("""
-                    Press 1 to add an item.
-                    Press 2 to delete an item.
-                    Press 3 to update an item.
-                    Press 4 to show all the items.
-                    Press 5 to quit the program.""");
+        System.out.println("Press 1 to add an item." +
+                    "\nPress 2 to delete an item." +
+                    "\nPress 3 to update an item." +
+                    "\nPress 4 to show all the items." +
+                    "\nPress 5 to quit the program.");
         userListOpt = input.nextInt();
 
         input.nextLine();
