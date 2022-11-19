@@ -42,6 +42,8 @@ class Item
 
 class Main 
 {
+  static Scanner input = new Scanner(System.in);
+  
   public static void main(String[] args)
   {
     boolean loopIgnition = true;
@@ -73,7 +75,6 @@ class Main
   public static int userInput()
   {
     int userListOpt;
-    Scanner input = new Scanner(System.in);
 
     System.out.println("Press 1 to add an item." +
                        "\nPress 2 to delete an item." +
@@ -89,7 +90,6 @@ class Main
 
   public static void case1(ArrayList<Item> itemList)
   {
-    Scanner input = new Scanner(System.in);
     Item I1 = new Item();
 
     System.out.println("Enter the name:");
@@ -106,8 +106,6 @@ class Main
 
   public static void case2 (ArrayList<Item> itemList)
   {
-    Scanner input = new Scanner(System.in);
-
     System.out.println("Enter the serial number of the item to delete:");
     String serial = input.nextLine();
 
@@ -124,8 +122,6 @@ class Main
 
   public static void case3 (ArrayList<Item> itemList)
   {
-    Scanner input = new Scanner(System.in);
-
     System.out.println("Enter the serial number of the item to change:");
     String serial = input.nextLine();
 
